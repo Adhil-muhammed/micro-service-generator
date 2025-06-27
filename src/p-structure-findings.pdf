@@ -1,0 +1,28 @@
+src/
+├── main.ts
+├── app.module.ts
+├── config/              # Environment configs (dev, prod, test)
+│   └── config.service.ts
+├── common/              # Shared utilities (pipes, guards, interceptors, filters)
+│   ├── decorators/
+│   ├── exceptions/
+│   ├── guards/
+│   └── pipes/
+├── shared/              # Reusable modules (e.g., Logger, Mailer, Auth)
+│   └── logger/
+├── modules/             # Feature modules grouped by domain
+│   ├── user/
+│   │   ├── controllers/
+│   │   ├── services/
+│   │   ├── dtos/
+│   │   ├── entities/
+│   │   └── user.module.ts
+│   ├── product/
+│   └── order/
+├── infrastructure/      # External integrations (DB, cache, APIs)
+│   ├── database/
+│   ├── redis/
+│   └── http/
+├── interfaces/          # Global interfaces and types
+├── utils/               # Helper functions
+└── assets/              # Static files (images, docs)
